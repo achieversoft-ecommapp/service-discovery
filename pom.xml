@@ -4,14 +4,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.achieversoft.ecommapp</groupId>
-		<artifactId>parent-pom</artifactId>
+		<artifactId>parent-project</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.achieversoft.com</groupId>
-	<artifactId>service-registry</artifactId>
+	<artifactId>service-discovery</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>service-registry</name>
+	<name>service-discovery</name>
 	<description>AchiverSoft Product</description>
 
 	<dependencies>

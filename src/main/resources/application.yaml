@@ -1,9 +1,26 @@
 spring:
   application:
-    name: service-registry
+    name: service-discovery
+#  zipkin:
+#    base-url: ${SPRING_ZIPKIN_BASE_URL:http://localhost:9411/}
+  cloud:
+    config:
+      import-check:
+        enabled: false
 server:
   port: 8761
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+
+management:
+  tracing:
+    brave:
+      span-joining-supported: true
+    sampling:
+      probability: 1.0
+    propagation:
+      type: B3
+
+
